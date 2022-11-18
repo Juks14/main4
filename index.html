@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" href="NY.css">
+<head>
+<!--Гирлянда на сайт html -->
+<div id="garland" class="garland_4">
+<div id="nums_1">1</div>
+</div>
+<header>
+  <div class="wrap-logo">
+  </div>
+  <nav>
+    <a  href="index.html">Главная</a>
+    <a  href="catalog1.html">Каталог</a>
+    <a  href="2.html">О нас</a>
+  </nav>
+</header>
+    <meta charset="UTF-8">
+    <title>Happy New Year!</title>
+	 <style>
+   body {
+    background: url(1619120358_38-phonoteka_org-p-novogodnii-fon-dlya-storis-61.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+   }
+   <font color="white"></font>
+  </style>
+    <meta name="keywords" content="новогодние украшения,гирлянды,подарки">
+    <meta name="description" content="На этой странице вы сможете познакомиться с красивыми новогодними игрушками.">
+
+</head>
+<body>
+<body>
+<div class="span">
+<h1>Happy New Year!</h1>
+<h2>История создания игрушек</h2>
+<p>
+   Согласно одной из версий, первые привычные нам стеклянные елочные игрушки появились в Саксонии еще в XVI веке.<br>
+   То есть даже раньше первого документированного рождественского дерева.<br>
+   По другой,<strong>более правдоподобной версии</strong>, появление игрушек связано с неурожаем яблок в Германии в 1848 году.
+   <br>
+    Разновидности ёлочных игрушек:
+</p>
+    <ul>
+        <li>Гирлянды</li>
+        <li>Шары</li>
+        <li>Звёзды</li>
+    </ul>
+</ul>
+<div align="center"><img alt="новогодние украшения web.a.net"src="https://webanetlabs.net/ng2015/dedmoroz20162.gif" width="120" height="145"></div>
+</body>
+</html>
+<!--Гирлянда на сайт css -->
+<style type="text/css">
+#garland {
+position:absolute;
+top:0;left:0;
+background-image:url('https://sitespectr.ru/test/girlyanda/christmas-lights.png');
+height:36px;width:100%;overflow:hidden;z-index:99}
+.garland_1 {background-position: 0 0}
+.garland_2 {background-position: 0 -36px}
+.garland_3 {background-position: 0 -72px}
+.garland_4 {background-position: 0 -108px}
+</style>
+<!--Гирлянда на сайт javascript -->
+<script type="text/javascript">
+function garland() {
+nums = document.getElementById('nums_1').innerHTML
+if(nums == 1) {document.getElementById('garland').className='garland_1';
+document.getElementById('nums_1').innerHTML='2'}
+if(nums == 2) {document.getElementById('garland').className='garland_2';
+document.getElementById('nums_1').innerHTML='3'}
+if(nums == 3) {document.getElementById('garland').className='garland_3';
+document.getElementById('nums_1').innerHTML='4'}
+if(nums == 4) {document.getElementById('garland').className='garland_4';
+document.getElementById('nums_1').innerHTML='1'}
+}
+setInterval(function(){garland()}, 600)
+</script>

@@ -1,0 +1,98 @@
+* {box-sizing: border-box;}
+
+body {      /*шапка сайта*/
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: green;   /*замена цвета*/
+  padding: 27px 10px;     /*ширина полоски*/
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+ 
+}
+
+header a {
+  color: #212121;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 2px;
+}
+
+header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: red; /*замена цвета при наведении*/
+  color: #2122;
+}
+
+header a.active {
+  background-color: #FBC02D; /*замена главного цвета*/
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+  
+  
+.span {
+  display: inline-block;
+  transform: translate(45em, 2em);
+}
+.span1 {
+  display: inline-block;
+  transform: translate(60em, 2em);
+}
+
+.span2 {
+  display: inline-block;
+  transform: translate(45em, 10em);
+}
+
+.span3 {
+  display: inline-block;
+  transform: translate(9em, 5em);
+}
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+}
+th, td:first-child {
+background: green;
+color: white;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+td {
+background: green;
+}
+th:first-child, td:first-child {
+text-align: left;
+}
+.post {  /*стиль текста*/
+   font-family: 'Playfair Display SC', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+line-height: 20px;
+text-align: center;
+}
